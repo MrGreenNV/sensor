@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "measurement")
 @Getter
@@ -29,6 +31,10 @@ public class Measurement {
     @Column(name = "raining")
     @NotNull
     private Boolean isRaining;
+
+    @Column(name = "measurement_date_time")
+    @NotNull
+    private LocalDateTime measurementDateTime;
 
     @NotNull
     @ManyToOne
