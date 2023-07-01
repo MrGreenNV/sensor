@@ -15,11 +15,11 @@ public class SensorService {
 
     private final SensorRepository sensorRepository;
 
-    public void register(Sensor sensor) {
-        sensorRepository.save(sensor);
-    }
-
     public Optional<Sensor> findByName(String name) {
         return sensorRepository.findByName(name);
+    }
+
+    public void register(Sensor sensor) {
+        sensorRepository.save(sensor);
     }
 }
