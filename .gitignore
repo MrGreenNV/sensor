@@ -51,3 +51,8 @@ out/
 *.dox
 *.docx
 *.pdf
+
+##############################
+## Spring Framework
+##############################
+application.properties
